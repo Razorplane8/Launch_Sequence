@@ -1,0 +1,76 @@
+ml lang="en">
+<hea<!DOCTYPE html Duane P. Bogan>
+<htd>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UAT Functions Page 3</title>
+
+<script>
+    function showAlert() {
+      alert ("Hello world!");
+    }
+</script>
+<script type="text/javascript">
+//intitialize the countdown starting with 10
+var countDown = 10;
+//show the initialization of 10 in the p tag countdownlabel
+document.getElementById("countdownlabel").innerHTML = countDown;
+
+//functiobn called Blastoff to do the work when start button is clicked
+function BlastOff ()
+{
+if(countDown != -1)
+{ //each time the user hits the start button then the label shows the number
+document.getElementById("countdownlabel").innerHTML = countDown;
+}
+else
+{
+//is countdown = 0 then unhide the blastoffLabel and show the user
+const blastoffView = document.getElementById("blastoffLabel");
+blastoffView.style.display = "block";
+}
+//used to decrement or decrease the value of countdown by one. notice the two dashes at the end
+countDown--;
+}
+</script>
+
+<script type="text/javascript">
+//code below used to close the browser
+function closeTheProgram()
+{
+this.close();
+}
+</script>
+</head>
+<body>
+<!--insert your image below change the width and height properties -->
+
+<img src="UAT_Shield_Logo.png"; alt="UAT Picture"; width="200px" height="200px" >
+
+<h1 style="background-color: black; color: red;"><b>UAT Space Program</b></h1>
+<h2 style="background-color: blue; color: yellow;">JavaScript Function 3</h2>
+<h3><i>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi quam temporibus ipsum earum corporis voluptatem incidunt, vitae quaerat quas sunt nihil, dolor nemo suscipit error laborum aliquid sint odio assumenda.</i></h3> 
+
+<!--p tag used to store count down information to the user-->
+<p style="font-size: 30px;background-color: yellow;color: darkblue;" id="countdownlabel"></p>
+<!--p tag hidden and disclosed to user when the count =0-->
+<p style="font-size: 30px;background-color:white;color:crimson;" id="blastoffLabel" hidden="hidden"><b><i>BlastOff</i></b></p>
+
+<!--a is used as a short cut id to indicate a message button-->
+<button style="background-color:rgb(111, 122, 215);color:rgb(14, 26, 106); block-size: 50px;" id="a" onclick="showAlert()">Message</button>
+<!--b is used as a short cut id to indicate blastoff button-->
+<button style="background-color:rgb(73, 188, 90);color:rgb(8, 83, 31); block-size: 50px;" id="b" onclick="BlastOff()">Start</button>
+<!--c id is a short cut to indicate to close or close button-->
+<button style="background-color:rgb(210, 110, 110);color:rgb(106, 22, 22); block-size: 50px;" id="c" onclick="closeTheProgram()">End</button>
+
+<style>
+    body {
+background:
+linear-gradient(to  
+bottom, red, white, #09046a); 
+    }
+    
+</style>   
+</body>
+</html>
